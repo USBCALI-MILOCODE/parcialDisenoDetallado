@@ -1,18 +1,17 @@
-## Getting Started
+Cosas que añadí para la solución del problema:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Interfaz CalculadorNumero:
+La interfaz CalculadorNumero define métodos para determinar si un número es perfecto, defectuoso o abundante. 
+Estos métodos son esPerfecto, esDefectivo y esAbundante.
 
-## Folder Structure
+Clase Numero:
+La clase Numero implementa la interfaz CalculadorNumero y encapsula la lógica para verificar los tipos de números, contiene un constructor que recibe un número entero y métodos para calcular si es perfecto, defectuoso o abundante, utilicé ciclos y operaciones matemáticas para calcular y compararla con el número en cuestión.
 
-The workspace contains two folders by default, where:
+Clase NumeroPerfecto:
+La clase NumeroPerfecto extiende la clase Numero y sobrescribe el método esPerfecto para determinar si un número es perfecto, implemente la lógica específica para verificar si la suma de los divisores de un número es igual al número mismo.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Clase NumeroDefectivo:
+La clase NumeroDefectivo extiende la clase Numero y sobrescribe el método esDefectivo para determinar si un número es defectuoso, implemente la lógica específica para verificar si la suma de los divisores de un número es menor que el número mismo.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Clase NumeroAbundante:
+La clase NumeroAbundante extiende la clase Numero y sobrescribe el método esAbundante para determinar si un número es abundante, implemente la lógica específica para verificar si la suma de los divisores de un número es mayor que el doble del número mismo.
